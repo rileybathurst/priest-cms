@@ -1,8 +1,10 @@
 {
   "name": "priest-cms",
+  "homepage": "http://45.79.101.19:1338",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Priest SHeetmetal CMS",
+  "repository": "github:rileybathurst/priest-cms"
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -17,7 +19,9 @@
     "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Riley Bathurst",
+    "email": "riley@rileybathurst.com",
+    "url": "https://rileybathurst.com"
   },
   "strapi": {
     "uuid": "8b7ca0a9-22f1-432b-991e-b0b6a03b9576"
