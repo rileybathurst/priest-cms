@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "Priest SHeetmetal CMS",
-  "repository": "github:rileybathurst/priest-cms"
+  "repository": "github:rileybathurst/priest-cms",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -13,10 +13,10 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.2.2",
-    "@strapi/plugin-users-permissions": "4.2.2",
-    "@strapi/plugin-i18n": "4.2.2",
-    "better-sqlite3": "7.4.6"
+    "@strapi/strapi": "4.7.1",
+    "@strapi/plugin-users-permissions": "4.7.1",
+    "@strapi/plugin-i18n": "4.7.1",
+    "better-sqlite3": "8.2.0"
   },
   "author": {
     "name": "Riley Bathurst",

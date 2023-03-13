@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industries",
+  "info": {
+    "singularName": "industry",
+    "pluralName": "industries",
+    "displayName": "industry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9/-]*$"
+    },
+    "byline": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "og_image": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "industry_aspect": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::industry-aspect.industry-aspect",
+      "mappedBy": "industry"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
