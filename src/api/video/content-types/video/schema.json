@@ -4,7 +4,8 @@
   "info": {
     "singularName": "video",
     "pluralName": "videos",
-    "displayName": "video"
+    "displayName": "video",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,6 +28,9 @@
       "relation": "manyToOne",
       "target": "api::service.service",
       "inversedBy": "videos"
+    },
+    "mux": {
+      "type": "string"
     }
   }
 }

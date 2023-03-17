@@ -86,6 +86,9 @@
     },
     "order": {
       "type": "integer"
+    },
+    "muxCover": {
+      "type": "string"
     }
   }
 }

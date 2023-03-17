@@ -11,12 +11,12 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.7.1",
-    "@strapi/plugin-users-permissions": "4.7.1",
     "@strapi/plugin-i18n": "4.7.1",
-    "better-sqlite3": "8.2.0"
+    "@strapi/plugin-users-permissions": "4.7.1",
+    "@strapi/strapi": "4.7.1",
+    "better-sqlite3": "8.2.0",
+    "strapi-plugin-mux-video-uploader": "^2.5.1"
   },
   "author": {
     "name": "Riley Bathurst",
