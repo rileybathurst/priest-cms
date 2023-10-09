@@ -89,6 +89,9 @@
     },
     "muxCover": {
       "type": "string"
+    },
+    "shortname": {
+      "type": "string"
     }
   }
 }
