@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true,
+      "regex": "^[a-z0-9\\-]*$"
+    },
+    "byline": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "coverMedium": {
+      "type": "enumeration",
+      "enum": [
+        "photo",
+        "video"
+      ]
+    },
+    "coverVideo": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "og_image": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hasGallery": {
+      "type": "boolean"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hasVideo": {
+      "type": "boolean"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video",
+      "mappedBy": "service"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "shortname": {
+      "type": "string"
+    }
+  }
+}

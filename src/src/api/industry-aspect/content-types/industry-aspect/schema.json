@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "industry_aspects",
+  "info": {
+    "singularName": "industry-aspect",
+    "pluralName": "industry-aspects",
+    "displayName": "industry-aspect"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "industry": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::industry.industry",
+      "inversedBy": "industry_aspect"
+    }
+  }
+}
