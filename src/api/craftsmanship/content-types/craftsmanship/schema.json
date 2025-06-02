@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "craftsmanships",
+  "info": {
+    "singularName": "craftsmanship",
+    "pluralName": "craftsmanships",
+    "displayName": "craftsmanship"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "priest-cms",
+  "homepage": "http://45.79.101.19:1338",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Priest SHeetmetal CMS",
+  "repository": "github:rileybathurst/priest-cms",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-users-permissions": "^4.25.1",
+    "@strapi/strapi": "^4.25.1",
+    "better-sqlite3": "^11.0.0",
+    "crc": "^4.3.2",
+    "iconv-lite": "^0.6.3",
+    "nodemailer": "^6.9.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
+  },
+  "author": {
+    "name": "Riley Bathurst",
+    "email": "riley@rileybathurst.com",
+    "url": "https://rileybathurst.com"
+  },
+  "strapi": {
+    "uuid": "8b7ca0a9-22f1-432b-991e-b0b6a03b9576"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
